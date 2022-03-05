@@ -2,8 +2,18 @@ h1 {
     font-size: 5em;
 }
 
+#title_form {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
 #profile_pic {
     height: 340px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20.5%;
 }
 
 .social-icon {
@@ -19,8 +29,3 @@ a {
     color: burlywood;
     text-decoration: none;
 }
-
-/* element.style {
-    border: solid;
-    margin: 20px;
-} */
