@@ -1,0 +1,157 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.side-pic {
+    width: 200px;
+    height: auto;
+}
+
+.left-pic {
+    margin-left: 20px;
+}
+
+.right-pic {
+    margin-right: 20px;
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    max-width: 800px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.intro-section h1, .intro-section h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.intro-section p, .intro-section ul {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+h1#title_form {
+    font-size: 5em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightslategray;
+    color: white;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-icon {
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.resume-link {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: white;
+    background-color: darkblue;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resume-link:hover {
+    background-color: royalblue;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.grid-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.grid-list li {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.social-links img {
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    .intro-section {
+        width: 90%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .intro-section h1 {
+        font-size: 2.5em;
+    }
+
+    .intro-section p, .intro-section h2 {
+        font-size: 1.2em;
+    }
+
+    .side-pic {
+        width: 100px;
+    }
+
+    .resume-link {
+        font-size: 1.3em;
+        padding: 8px 16px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .grid-list li {
+        padding: 5px 10px;
+        background-color: #333;
+        border-radius: 8px;
+        font-size: 1em;
+    }
+
+    .social-links img {
+        width: 50px;
+        height: 50px;
+    }
+}
